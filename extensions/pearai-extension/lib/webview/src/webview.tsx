@@ -10,43 +10,43 @@ const rootElement = document.getElementById("root");
 
 const panel = document.currentScript?.getAttribute("data-panel-id");
 const isStateReloadingEnabled =
-  document.currentScript?.getAttribute("data-state-reloading-enabled") ===
-  "true";
+	document.currentScript?.getAttribute("data-state-reloading-enabled") ===
+	"true";
 
 if (rootElement != undefined) {
-  const reactRoot = createRoot(rootElement);
+	const reactRoot = createRoot(rootElement);
 
-  const render = (panelState?: webviewApi.PanelState) => {
-    try {
-      reactRoot?.render(
-        <React.StrictMode>
-          {(() => {
-            switch (panel) {
-              case "chat":
-                return (
-                  <ChatPanelView
-                    sendMessage={sendMessage}
-                    panelState={panelState}
-                  />
-                );
-              case "diff":
-                return (
-                  <DiffPanelView
-                    sendMessage={sendMessage}
-                    panelState={panelState}
-                  />
-                );
-              default:
-                return <div />;
-            }
-          })()}
-        </React.StrictMode>
-      );
-    } catch (error) {
-      console.error(error);
-    }
-  };
+	const render = (panelState?: webviewApi.PanelState) => {
+		try {
+			reactRoot?.render(
+				<React.StrictMode>
+					{(() => {
+						switch (panel) {
+							case "chat":
+								return (
+									<ChatPanelView
+										sendMessage={sendMessage}
+										panelState={panelState}
+									/>
+								);
+							case "diff":
+								return (
+									<DiffPanelView
+										sendMessage={sendMessage}
+										panelState={panelState}
+									/>
+								);
+							default:
+								return <div />;
+						}
+					})()}
+				</React.StrictMode>
+			);
+		} catch (error) {
+			console.error(error);
+		}
+	};
 
-  render(isStateReloadingEnabled ? StateManager.getState() : undefined);
-  StateManager.registerUpdateListener(render);
+	render(isStateReloadingEnabled ? StateManager.getState() : undefined);
+	StateManager.registerUpdateListener(render);
 }

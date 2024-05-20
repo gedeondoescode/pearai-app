@@ -1,4 +1,4 @@
 export type Message = {
-  content: string;
-  author: "user" | "bot";
+	content: string;
+	author: "user" | "bot";
 };

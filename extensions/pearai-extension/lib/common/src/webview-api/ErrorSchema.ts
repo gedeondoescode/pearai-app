@@ -1,17 +1,17 @@
 import zod from "zod";
 
 export const errorSchema = zod.union([
-  zod.string(),
-  zod.object({
-    title: zod.string(),
-    message: zod.string(),
-    level: zod
-      .union([zod.literal("error"), zod.literal("warning")])
-      .default("error")
-      .optional(),
-    disableRetry: zod.boolean().optional(),
-    disableDismiss: zod.boolean().optional(),
-  }),
+	zod.string(),
+	zod.object({
+		title: zod.string(),
+		message: zod.string(),
+		level: zod
+			.union([zod.literal("error"), zod.literal("warning")])
+			.default("error")
+			.optional(),
+		disableRetry: zod.boolean().optional(),
+		disableDismiss: zod.boolean().optional(),
+	}),
 ]);
 
 /**

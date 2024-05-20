@@ -2,10 +2,10 @@ import zod from "zod";
 import { panelStateSchema } from "./PanelState";
 
 export const incomingMessageSchema = zod.object({
-  data: zod.object({
-    type: zod.literal("updateState"),
-    state: panelStateSchema,
-  }),
+	data: zod.object({
+		type: zod.literal("updateState"),
+		state: panelStateSchema,
+	}),
 });
 
 /**

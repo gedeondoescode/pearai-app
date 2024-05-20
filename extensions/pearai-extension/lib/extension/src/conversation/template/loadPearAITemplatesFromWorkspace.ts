@@ -5,8 +5,8 @@ import { PearAITemplateLoadResult } from "./PearAITemplateLoadResult";
 const TEMPLATE_GLOB = ".pearai/template/**/*.rdt.md";
 
 export async function loadPearAITemplatesFromWorkspace(): Promise<
-  Array<PearAITemplateLoadResult>
+	Array<PearAITemplateLoadResult>
 > {
-  const files = await vscode.workspace.findFiles(TEMPLATE_GLOB);
-  return await Promise.all(files.map(loadConversationFromFile));
+	const files = await vscode.workspace.findFiles(TEMPLATE_GLOB);
+	return await Promise.all(files.map(loadConversationFromFile));
 }
