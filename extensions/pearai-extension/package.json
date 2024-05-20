@@ -409,7 +409,6 @@
     ]
   },
   "scripts": {
-    "prepare": "husky install",
     "build-all": "cross-env NODE_ENV=production yarn nx run-many --target=build",
     "build-extension": "yarn nx run vscode:build",
     "test": "yarn nx run extension:test",
