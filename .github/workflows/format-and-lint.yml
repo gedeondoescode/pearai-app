@@ -25,9 +25,7 @@ jobs:
         run: yarn
 
       - name: Run Prettier
-        run: yarn prettier --check './**/src/**/*.{ts,tsx}'
-        working-directory: ./extensions/pearai-extension
+        run: yarn prettier --check './extensions/pearai-extension/**/src/**/*.{ts,tsx}'
 
       - name: Run ESLint
-        run: yarn eslint './**/src/**/*.{ts,tsx}' --quiet
-        working-directory: ./extensions/pearai-extension
+        run: yarn eslint './extensions/pearai-extension/**/src/**/*.{ts,tsx}' --quiet
