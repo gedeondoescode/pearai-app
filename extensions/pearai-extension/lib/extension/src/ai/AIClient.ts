@@ -140,6 +140,7 @@ export class AIClient {
 				totalTokenCount: (rawResponse as OpenAITextEmbeddingResponse).usage
 					?.total_tokens,
 			};
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		} catch (error: any) {
 			console.log(error);
 

@@ -1,5 +1,4 @@
 import * as vscode from "vscode";
-import { getActiveEditor } from "../../vscode/getActiveEditor";
 
 export const getOpenFiles = async () => {
 	const contextDocuments = vscode.workspace.textDocuments.filter(

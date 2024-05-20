@@ -1,5 +1,4 @@
 import { webviewApi } from "@pearai/common";
-import { on } from "events";
 import React from "react";
 
 export const ConversationHeader: React.FC<{

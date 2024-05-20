@@ -167,6 +167,7 @@ export class ChatController {
 			if (result.shouldImmediatelyAnswer) {
 				await result.conversation.answer();
 			}
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		} catch (error: any) {
 			console.log(error);
 			await vscode.window.showErrorMessage(error?.message ?? error);

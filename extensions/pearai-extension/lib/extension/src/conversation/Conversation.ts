@@ -200,6 +200,7 @@ export class Conversation {
 
 			// handle full completion (to allow for cleanup):
 			await this.handleCompletion(responseUntilNow, prompt);
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		} catch (error: any) {
 			console.log(error);
 			await this.setError(error?.message ?? "Unknown error");
@@ -427,6 +428,7 @@ export class Conversation {
 
 			const tab = allTabs.find((tab) => {
 				return (
+					// eslint-disable-next-line @typescript-eslint/no-explicit-any
 					(tab.input as any).viewType ===
 					`mainThreadWebview-pearai.diff.${this.id}`
 				);
