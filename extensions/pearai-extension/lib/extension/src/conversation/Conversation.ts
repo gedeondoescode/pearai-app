@@ -72,7 +72,7 @@ export class Conversation {
 				: {
 						type: "waitingForBotAnswer",
 						botAction: template.initialMessage.placeholder ?? "Answering",
-				  };
+					};
 	}
 
 	async getTitle() {
@@ -521,13 +521,13 @@ export class Conversation {
 								: this.messages,
 							state: this.state,
 							error: this.error,
-					  }
+						}
 					: {
 							type: "instructionRefinement",
 							instruction: "", // TODO last user message?
 							state: this.refinementInstructionState(),
 							error: this.error,
-					  },
+						},
 		};
 	}
 

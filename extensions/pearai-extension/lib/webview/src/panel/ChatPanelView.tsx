@@ -95,7 +95,7 @@ export const ChatPanelView: React.FC<{
 											type: "insertPromptIntoEditor",
 											data: { id: conversation.id },
 										});
-								  }
+									}
 								: undefined
 						}
 					/>
