@@ -1,9 +1,8 @@
-# PearAI Extension
+# PearAI Extension Directory
 
-This is the source code for the bulk of PearAI's functionality. Founded by [nang](https://youtube.com/nang88) and [FryingPan](https://youtube.com/@FryingPan)
+This is the directory with the bulk of PearAI's functionality. Founded by [nang](https://youtube.com/nang88) and [FryingPan](https://youtube.com/@FryingPan)
 
 To download the full product: visit https://trypear.ai
-To see the parent repository: visit https://github.com/trypear/pearai
 
 <!-- prettier-ignore-start -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -51,7 +50,7 @@ Let PearAI identify error causes and suggest fixes to fix compiler and linter er
 
 Read our [contributing guide](CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes.
 
-To help you get your feet wet and become familiar with our contribution process, we have a list of [good first issues](https://github.com/trypear/pearai-extension/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) that contains things with a relatively limited scope. This is a great place to get started!
+To help you get your feet wet and become familiar with our contribution process, we have a list of [good first issues](https://github.com/trypear/pearai-app/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) that contains things with a relatively limited scope. This is a great place to get started!
 
 ## Built With
 

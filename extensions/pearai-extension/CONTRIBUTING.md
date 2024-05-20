@@ -1,6 +1,6 @@
 # Contributing to PearAI
 
-This is the source code for the bulk of PearAI's functionality.
+This is the source code for the bulk of PearAI's functionality. Almost all the contributions should be in this subdirectory.
 
 ## Table of Contents
 
@@ -33,11 +33,9 @@ To run them in watch mode, use: `pnpm test-watch`.
 
 The extension can be run in two ways:
 
-Interally within the main PearAI application (which is a VSCode fork): https://github.com/trypear/pearai/
+RECOMMENDED: Interally within the main PearAI application (which is a VSCode fork): https://github.com/trypear/pearai/. For running it standalone, you will want to `cd` into `extensions/pearai-extension` and visit [Contributing to pearai](CONTRIBUTING.md).
 
-Externally as an extension: https://github.com/trypear/pearai-extension/
-
-This guide is for running it externally. For running it internally, you will need to clone [pearai](https://github.com/trypear/pearai/) and visit [Contributing to pearai](https://github.com/trypear/pearai/blob/main/CONTRIBUTING.md)
+Standalone as an extension. This guide is for running it standalone.
 
 You can use [VS Code's built-in debugger][vscode-debug-extension] on the project to try out your local extension.
 
